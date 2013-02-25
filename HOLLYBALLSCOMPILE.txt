@@ -1,0 +1,1 @@
+g++ `perl -MExtUtils::Embed -e ccopts -e ldopts`  -D_GLIBCXX_USE_NANOSLEEP -I/usr/lib/erlang/usr/include/ -fPIC -shared -lperl++ --std=gnu++0x -O3 -o perlang.so perlang.cpp
